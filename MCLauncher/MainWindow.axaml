@@ -23,7 +23,9 @@
                         Margin="20,0,20,15">
 
                         <Grid ColumnDefinitions="*, Auto, *">
-                                <Button Grid.Column="1" Classes="LaunchBtn" 
+                                <Button Grid.Column="1" 
+                                        Classes="LaunchBtn" 
+                                        Click="OnLaunchButtonClicked"
                                         Content="PLAY"
                                         VerticalAlignment="Center"/>
                         </Grid>
