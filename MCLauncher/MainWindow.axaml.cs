@@ -6,6 +6,7 @@ using Avalonia.Interactivity;
 using CmlLib.Core;
 using CmlLib.Core.Auth;
 using CmlLib.Core.ProcessBuilder;
+
 using MCLauncher.Utils;
 
 namespace MCLauncher;

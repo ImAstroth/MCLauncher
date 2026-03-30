@@ -8,7 +8,7 @@
         Background="Transparent"
         
         x:Class="MCLauncher.MainWindow"
-        Title="MCLauncher">
+        Title="Astro Launcher">
     
         <Grid>
                 <Image Source="/Assets/background.png" 
@@ -24,10 +24,29 @@
 
                         <Grid ColumnDefinitions="*, Auto, *">
                                 <Button Grid.Column="1" 
-                                        Classes="LaunchBtn" 
+                                        Classes="BottomBtn" 
+                                        FontSize="35"
+                                        Padding="10"
+                                        FontFamily="{StaticResource MinecraftFont}"
                                         Click="OnLaunchButtonClicked"
                                         Content="PLAY"
                                         VerticalAlignment="Center"/>
+                                
+                                <Button Grid.Column="0"
+                                        Background="#2c3e50"
+                                        Width="65"
+                                        Height="65"
+                                        VerticalAlignment="Center"
+                                        HorizontalAlignment="Center"
+                                        HorizontalContentAlignment="Center"
+                                        VerticalContentAlignment="Center"
+                                        CornerRadius="15">
+
+                                        <Image Source="/Assets/Images/settings.png" 
+                                               Width="50" Height="50"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"/>
+                                </Button>
                         </Grid>
                         
                 </Border>
