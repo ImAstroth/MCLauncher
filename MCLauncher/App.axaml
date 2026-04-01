@@ -8,6 +8,7 @@
         
         <StyleInclude Source="Styles/ButtonStyles.axaml"/>
         <StyleInclude Source="Styles/TextBoxStyles.axaml"/>
+        <StyleInclude Source="Styles/OtherStyles.axaml"/>
     </Application.Styles>
     
     <Application.Resources>

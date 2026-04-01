@@ -1,5 +1,6 @@
 using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Input;
@@ -34,30 +35,73 @@ public partial class MainWindow : Window
     {
         await LaunchMinecraftAsync();
     }
+    
+    protected override async void OnOpened(EventArgs e)
+    {
+        base.OnOpened(e);
+        await LoadVersionsAsync();
+    }
+
+    private async Task LoadVersionsAsync()
+    {
+        var path = MinecraftPath.GetOSDefaultPath();
+        var launcher = new MinecraftLauncher(path);
+        
+        // fetch versions
+        try
+        {
+            var allVersions = await launcher.GetAllVersionsAsync();
+            
+            // filter versions only for releases (v is version btw)
+            var releasesOnly = allVersions
+                .Where(v => v.Type == "release")
+                .Select(v => v.Name)
+                .ToList();
+            
+            // update drop down
+            VersionsMenu.ItemsSource = releasesOnly;
+        
+            // set a default so it is not empty
+            VersionsMenu.SelectedIndex = 0;
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
+    }
 
     private async Task LaunchMinecraftAsync()
     {
         try 
         {
+            string? selectedVersion = VersionsMenu.SelectedItem as string;
+            string username = UsernameBox.Text ?? "Player";
+
+            if (string.IsNullOrEmpty(selectedVersion))
+            {
+                Debug.WriteLine("Error: You must select a version first!");
+                return;
+            }
+            
             var path = MinecraftPath.GetOSDefaultPath();
             var launcher = new MinecraftLauncher(path);
 
             var launchOption = new MLaunchOption
             {
                 MaximumRamMb = 2048,
-                Session = MSession.CreateOfflineSession("User") 
+                Session = MSession.CreateOfflineSession(username),
             };
 
-            Console.WriteLine("[CmlLib] Verifying files and launching...");
+            Debug.WriteLine($"[Astro] Launching {selectedVersion} for {username}...");
 
-            var process = await launcher.CreateProcessAsync("1.20.1", launchOption);
-            process.Start();
+            var process = await launcher.CreateProcessAsync(selectedVersion, launchOption);
         
-            Console.WriteLine("Starting game...");
+            process.Start();
         }
         catch (Exception ex)
         {
-            DebugUtil.Error($"[CmlLib Error]: {ex.Message}");
+            Debug.WriteLine($"[Launch Error]: {ex.Message}");
         }
     }
 

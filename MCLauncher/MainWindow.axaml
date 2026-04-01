@@ -4,7 +4,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="750" d:DesignHeight="500"
         
-        
         WindowStartupLocation="CenterScreen"
         ExtendClientAreaTitleBarHeightHint="-1"
         ExtendClientAreaToDecorationsHint="True"
@@ -23,23 +22,23 @@
                 
                 <Grid>
                         <Rectangle Fill="#0A0E14" Opacity="0.5" />
-                        
-                        <StackPanel VerticalAlignment="Top"
-                                    Width="745" Height="30"
-                                    Margin="5"
-                                    Name="TopBar"
-                                    Background="#05070a"
-                                    PointerPressed="SetupDrag">
                                 
+                        <StackPanel VerticalAlignment="Top"
+                                    Width="700" Height="30"
+                                    Margin="10"
+                                    Background="Black"
+                                    Name="TopBar"
+                                    PointerPressed="SetupDrag">
+                        
                                 <StackPanel Name="ControlButtons"
                                             Orientation="Horizontal"
                                             HorizontalAlignment="Right">
-                                        
+                                
                                         <!-- Minimize button -->
                                         <Button Content="-"
                                                 Classes="Minimize ControlBtn"
                                                 Click="MinimizeButton_Click"/>
-                                        
+                                
                                         <!-- Close button -->
                                         <Button Content="✕"
                                                 Classes="Close ControlBtn"
@@ -63,10 +62,19 @@
                                 BorderThickness="1.5">
         
                                 <StackPanel Margin="10">
-                                        <Label Content="USERNAME" Foreground="White" FontWeight="SemiBold"
-                                               HorizontalAlignment="Left" Margin="0,0,0,5"/>
+                                        <Label Content="USERNAME" Classes="DefaultLabel" Margin="0,0,0,5"/>
+                                        <TextBox Classes="TextBoxStyle" Name="UsernameBox"/>
                                         
-                                        <TextBox Classes="TextBoxStyle"/>
+                                        <Label Classes="DefaultLabel" Content="MINECRAFT VERSION" Margin="0,5,0,5"/>
+                                        <ComboBox Classes="DefaultComboBox" Width="375" Name="VersionsMenu"
+                                                        PlaceholderForeground="Gray"
+                                                        PlaceholderText="Select version..."/>
+                                        
+                                        <Button Width="200" Height="50" HorizontalAlignment="Center" Margin="20"
+                                                CornerRadius="12" Name="LaunchButton" Content="PLAY"
+                                                VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                                                Foreground="White" FontFamily="Minecraft" FontSize="30"
+                                                Click="OnLaunchButtonClicked"/>
                                 </StackPanel>
                         </Border>
                 </Grid>

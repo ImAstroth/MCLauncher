@@ -6,6 +6,7 @@
         <Setter Property="VerticalAlignment" Value="Top"/>
         <Setter Property="Background" Value="Transparent"/>
         <Setter Property="Foreground" Value="White"/>
+        <Setter Property="Opacity" Value="1"/>
     </Style>
     
     <Style Selector="Button.Close:pointerover /template/ ContentPresenter">
@@ -15,6 +16,11 @@
     
     <Style Selector="Button.Minimize:pointerover /template/ ContentPresenter">
         <Setter Property="Foreground" Value="Goldenrod"/>
+        <Setter Property="Background" Value="Transparent"/>
+    </Style>
+    
+    <Style Selector="Button.Menu:pointerover /template/ ContentPresenter">
+        <Setter Property="Foreground" Value="#8C66FF"/>
         <Setter Property="Background" Value="Transparent"/>
     </Style>
 </Styles>

@@ -6,6 +6,7 @@
         <entry key="MCLauncher/App.axaml" value="MCLauncher/MCLauncher.csproj" />
         <entry key="MCLauncher/MainWindow.axaml" value="MCLauncher/MCLauncher.csproj" />
         <entry key="MCLauncher/Styles/ButtonStyles.axaml" value="MCLauncher/MCLauncher.csproj" />
+        <entry key="MCLauncher/Styles/OtherStyles.axaml" value="MCLauncher/MCLauncher.csproj" />
         <entry key="MCLauncher/Styles/TextBoxStyles.axaml" value="MCLauncher/MCLauncher.csproj" />
       </map>
     </option>
