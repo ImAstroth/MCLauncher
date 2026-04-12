@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using System.Text.Json;
 
-namespace MCLauncher;
+namespace MCLauncher.Managers;
 
 public static class AccountManager
 {

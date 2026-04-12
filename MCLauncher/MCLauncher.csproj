@@ -28,9 +28,11 @@
 
         <AvaloniaResource Include="Assets\Images\logo.png" />
 
-        <AvaloniaResource Include="Assets\Images\settings.png" />
-
         <None Remove="Assets\Images\logo.png" />
+
+        <None Remove="Assets\Images\folder.png" />
+
+        <AvaloniaResource Include="Assets\Images\folder.png" />
     </ItemGroup>
 
     <ItemGroup>
@@ -45,6 +47,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <AvaloniaResource Include="Assets\Images\settings.png" />
       <Content Include="bin\Debug\net9.0\Avalonia.Base.dll" />
       <Content Include="bin\Debug\net9.0\Avalonia.Controls.ColorPicker.dll" />
       <Content Include="bin\Debug\net9.0\Avalonia.Controls.dll" />

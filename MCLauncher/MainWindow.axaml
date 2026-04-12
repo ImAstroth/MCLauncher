@@ -2,7 +2,6 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MCLauncher"
         mc:Ignorable="d" d:DesignWidth="750" d:DesignHeight="600"
         
         WindowStartupLocation="CenterScreen"
@@ -38,12 +37,12 @@
                                         <!-- Minimize button -->
                                         <Button Content="-"
                                                 Classes="Minimize ControlBtn"
-                                                Click="MinimizeButton_Click"/>
+                                                Click="OnMinimizeButtonClicked"/>
                                 
                                         <!-- Close button -->
                                         <Button Content="✕"
                                                 Classes="Close ControlBtn"
-                                                Click="CloseButton_Click"/>
+                                                Click="OnCloseButtonClicked"/>
                                 </StackPanel>
                         </StackPanel>
                 
@@ -66,13 +65,14 @@
                                         <Label Content="ACCOUNT" Classes="DefaultLabel" Margin="0,0,0,5"/>
                                         <TextBox Classes="TextBoxStyle" Name="UsernameBox"/>
                                         
+                                        <Button Height="30" Classes="AccountBtn" HorizontalAlignment="Center" Margin="5"
+                                                Content="LOGIN" FontWeight="SemiBold" FontSize="15" VerticalContentAlignment="Center"
+                                                HorizontalContentAlignment="Center" Click="OnLoginClicked"/>
+                                        
                                         <Label Classes="DefaultLabel" Content="MINECRAFT VERSION" Margin="0,5,0,5"/>
                                         <ComboBox Classes="DefaultComboBox" Width="375" Name="VersionsMenu"
                                                         PlaceholderForeground="Gray"
                                                         PlaceholderText="Select version..." />
-                                        <Button Height="30" Classes="AccountBtn" HorizontalAlignment="Center" Margin="5"
-                                                Content="LOGIN" FontWeight="SemiBold" FontSize="15" VerticalContentAlignment="Center"
-                                                HorizontalContentAlignment="Center" Click="OnLoginClicked"/>
                                                 
                                         <Border CornerRadius="8">
                                                 
@@ -100,7 +100,26 @@
                                                 VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
                                                 Foreground="White" Background="#8C66FF"
                                                 FontWeight="SemiBold" FontSize="30"
-                                                Click="OnLaunchButtonClicked"/>
+                                                Click="OnLaunchButtonClicked"/> 
+                                        
+                                        <Grid Margin="10" Height="35" ColumnDefinitions="Auto, *, Auto">
+                                                
+                                                <!-- Settings button -->
+                                                <Button Grid.Column="0" Classes="BottomBtn" Name="SettingsBtn"
+                                                        VerticalContentAlignment="Center" HorizontalContentAlignment="Center" 
+                                                        Margin="5">
+                                                        
+                                                        <Image Source="Assets/Images/settings.png"/>
+                                                </Button>
+                                                
+                                                <!-- Folder button -->
+                                                <Button Grid.Column="2" Classes="BottomBtn" Name="FolderBtn"
+                                                        VerticalContentAlignment="Center" HorizontalContentAlignment="Center" 
+                                                        Margin="5" Click="OnFolderButtonClicked">
+                                                        
+                                                        <Image Source="Assets/Images/folder.png"/>
+                                                </Button>        
+                                        </Grid>
                                 </StackPanel>
                         </Border>
                 </Grid>
