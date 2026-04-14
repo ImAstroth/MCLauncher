@@ -1,0 +1,95 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="700"
+        
+        WindowStartupLocation="CenterScreen"
+        ExtendClientAreaTitleBarHeightHint="-1"
+        ExtendClientAreaToDecorationsHint="True"
+        ExtendClientAreaChromeHints="NoChrome"
+        SystemDecorations="None"
+        
+        Background="{DynamicResource SurfaceMain}"
+        Width="1000" Height="700"
+        CanResize="True"
+        CornerRadius="10"
+        
+        x:Class="AstroLauncher.MainWindow"
+        Title="Astro Launcher">
+        
+        <Border BorderBrush="{DynamicResource AccentColor}"
+                BorderThickness="2" CornerRadius="10" ClipToBounds="True">
+                
+                <Grid RowDefinitions="45, *">
+                        <!-- TOPBAR -->        
+                        <Border Grid.Row="0" BorderBrush="{DynamicResource SurfaceCard}"
+                                BorderThickness="0,0,0,2">
+                                
+                                <Grid Name="TopBar" 
+                                      Background="Transparent" 
+                                      PointerPressed="SetupDrag">
+
+                                        <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto"/>
+                                                <ColumnDefinition Width="*"/>    
+                                                <ColumnDefinition Width="Auto"/> 
+                                        </Grid.ColumnDefinitions>
+
+                                        <TextBlock Grid.Column="0" 
+                                                   Text="ASTRO LAUNCHER" 
+                                                   VerticalAlignment="Center" 
+                                                   Margin="15,0,0,0" 
+                                                   Foreground="{DynamicResource TextPrimary}"
+                                                   FontWeight="Bold"/>
+
+                                        <StackPanel Grid.Column="2" 
+                                                    Orientation="Horizontal" 
+                                                    VerticalAlignment="Center" 
+                                                    Margin="0,0,10,0">
+
+                                                <Button Content="-" 
+                                                        Classes="Minimize ControlBtn" 
+                                                        Click="OnMinimizeButtonClicked"/>
+
+                                                <Button Content="✕" 
+                                                        Classes="Close ControlBtn" 
+                                                        Click="OnCloseButtonClicked"/>
+                                        </StackPanel>
+                                </Grid>
+                        </Border>
+                        
+                        <Grid Grid.Row="1" ColumnDefinitions="250, *">
+                                
+                                <!-- SIDEBAR -->
+                                <Border Grid.Column="0" BorderBrush="{DynamicResource SurfaceCard}"
+                                        BorderThickness="0, 0, 2, 0" CornerRadius="0,20,20,0">
+                                        
+                                        <Grid RowDefinitions="*, *" VerticalAlignment="Bottom"
+                                              ColumnDefinitions="*, *">
+                                                
+                                                <!-- Settings button -->
+                                                <Button Grid.Column="0" Grid.Row="0" Classes="BottomBtn" Name="SettingsBtn"
+                                                        VerticalContentAlignment="Center" HorizontalContentAlignment="Center" 
+                                                        VerticalAlignment="Bottom"
+                                                        Margin="5" Click="OnSettingsButtonClicked">
+                                
+                                                        <Image Source="Assets/Images/settings.png"/>
+                                                </Button>
+                                        
+                                                <!-- Version label -->
+                                                <Label Grid.Column="0" Grid.Row="1" Content="v1.0.0" Margin="5" FontWeight="SemiBold"
+                                                       Foreground="{DynamicResource TextPrimary}" 
+                                                       VerticalAlignment="Bottom"
+                                                       Name="VersionLabel"/>
+                                        </Grid>
+                                </Border>
+
+                                <!-- MAIN AREA -->
+                                <Border Grid.Column="1">
+                                        
+                                </Border>
+                        </Grid>
+                </Grid>
+        </Border>                
+</Window>
