@@ -33,12 +33,12 @@
                                 
                                         <!-- Minimize button -->
                                         <Button Content="-"
-                                                Classes="Minimize ControlBtn"
+                                                Classes="MinimizeBtn ControlBtn"
                                                 Click="OnMinimizeButtonClicked"/>
                                 
                                         <!-- Close button -->
                                         <Button Content="✕"
-                                                Classes="Close ControlBtn"
+                                                Classes="CloseBtn ControlBtn"
                                                 Click="OnCloseButtonClicked"/>
                                 </StackPanel>
                         </StackPanel>

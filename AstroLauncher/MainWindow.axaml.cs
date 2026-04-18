@@ -17,6 +17,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        DataContext = new MainWindowViewModel();
         ExtendClientAreaToDecorationsHint = true;
         
 		// launcher version
@@ -39,18 +40,7 @@ public partial class MainWindow : Window
     {
         Close();
     }
-
-    private void OnFolderButtonClicked(object sender, RoutedEventArgs e)
-    {
-        Managers.FolderBtnManager.OpenMinecraftFolder();
-    }
     
-    public void OnSettingsButtonClicked(object sender, RoutedEventArgs e)
-    {
-        var settingsWin = new SettingsWindow();
-        // 'this' makes the main window the owner, keeping things centered and modal
-        settingsWin.ShowDialog(this);
-    }
     
     // public async void OnLaunchButtonClicked(object sender, RoutedEventArgs e)
     // {
