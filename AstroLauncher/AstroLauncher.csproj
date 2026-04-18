@@ -27,16 +27,37 @@
 
         <None Remove="Assets\Images\settings.png" />
 
-        <AvaloniaResource Include="Assets\Images\logo.png" />
-
         <None Remove="Assets\Images\logo.png" />
 
         <None Remove="Assets\Images\folder.png" />
 
-        <AvaloniaResource Include="Assets\Images\folder.png" />
+        <None Remove="Assets\Images\earth_icon.png" />
+
+        <None Remove="Assets\Images\folder_icon.png" />
+
+        <None Remove="Assets\Images\settings_icon.png" />
+
+        <None Remove="Assets\Images\earth-icon.png" />
+
+        <AvaloniaResource Include="Assets\Images\earth-icon.png" />
+
+        <None Remove="Assets\Images\minecraft-cube-icon.png" />
+
+        <AvaloniaResource Include="Assets\Images\minecraft-cube-icon.png" />
+
+        <None Remove="Assets\Images\saturn-icon.png" />
+
+        <AvaloniaResource Include="Assets\Images\saturn-icon.png" />
+
+        <None Remove="Assets\Images\settings-icon.png" />
+
+        <AvaloniaResource Include="Assets\Images\settings-icon.png" />
+
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.2" />
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="Assets\Images\" />
       <Folder Include="\Assets\Images" />
       <Folder Include="\Assets\Fonts\*"/>
     </ItemGroup>
@@ -48,7 +69,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <AvaloniaResource Include="Assets\Images\settings.png" />
       <Content Include="bin\Debug\net9.0\Avalonia.Base.dll" />
       <Content Include="bin\Debug\net9.0\Avalonia.Controls.ColorPicker.dll" />
       <Content Include="bin\Debug\net9.0\Avalonia.Controls.dll" />

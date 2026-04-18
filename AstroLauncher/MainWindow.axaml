@@ -38,7 +38,7 @@
 
                                         <TextBlock Grid.Column="0" 
                                                    Text="ASTRO LAUNCHER" 
-                                                   VerticalAlignment="Center" 
+                                                   VerticalAlignment="Center"
                                                    Margin="15,0,0,0" 
                                                    Foreground="{DynamicResource TextPrimary}"
                                                    FontWeight="Bold"/>
@@ -49,11 +49,11 @@
                                                     Margin="0,0,10,0">
 
                                                 <Button Content="-" 
-                                                        Classes="Minimize ControlBtn" 
+                                                        Classes="MinimizeBtn ControlBtn" 
                                                         Click="OnMinimizeButtonClicked"/>
 
                                                 <Button Content="✕" 
-                                                        Classes="Close ControlBtn" 
+                                                        Classes="CloseBtn ControlBtn" 
                                                         Click="OnCloseButtonClicked"/>
                                         </StackPanel>
                                 </Grid>
@@ -61,27 +61,35 @@
                         
                         <Grid Grid.Row="1" ColumnDefinitions="250, *">
                                 
-                                <!-- SIDEBAR -->
                                 <Border Grid.Column="0" BorderBrush="{DynamicResource SurfaceCard}"
                                         BorderThickness="0, 0, 2, 0" CornerRadius="0,20,20,0">
-                                        
-                                        <Grid RowDefinitions="*, *" VerticalAlignment="Bottom"
-                                              ColumnDefinitions="*, *">
-                                                
-                                                <!-- Settings button -->
-                                                <Button Grid.Column="0" Grid.Row="0" Classes="BottomBtn" Name="SettingsBtn"
-                                                        VerticalContentAlignment="Center" HorizontalContentAlignment="Center" 
-                                                        VerticalAlignment="Bottom"
-                                                        Margin="5" Click="OnSettingsButtonClicked">
-                                
-                                                        <Image Source="Assets/Images/settings.png"/>
+        
+                                        <Grid RowDefinitions="*, Auto, Auto">
+                
+                                                <StackPanel Grid.Row="0">
+                                                        <Button Classes="SidebarBtn" Name="HomeBtn">
+                                                                <StackPanel Orientation="Horizontal" Spacing="10">
+                                                                        <Image Source="Assets/Images/earth-icon.png" Width="50" Height="50"/>
+                                                                        <TextBlock Text="HOME" VerticalAlignment="Center" FontSize="35"/>
+                                                                </StackPanel>
+                                                        </Button>
+                        
+                                                        <Button Classes="SidebarBtn" Name="InstancesBtn">
+                                                                <StackPanel Orientation="Horizontal" Spacing="10">
+                                                                        <Image Source="Assets/Images/minecraft-cube-icon.png" Width="50" Height="50"/>
+                                                                        <TextBlock Text="INSTANCES" VerticalAlignment="Center" FontSize="25"/>
+                                                                </StackPanel>
+                                                        </Button>
+                                                </StackPanel>
+                
+                                                <Button Grid.Row="1" Classes="BottomBtn" Name="SettingsBtn"
+                                                        HorizontalAlignment="Center" Margin="5" Click="OnSettingsButtonClicked">
+                                                        <Image Source="Assets/Images/settings-icon.png"/>
                                                 </Button>
-                                        
-                                                <!-- Version label -->
-                                                <Label Grid.Column="0" Grid.Row="1" Content="v1.0.0" Margin="5" FontWeight="SemiBold"
+        
+                                                <Label Grid.Row="2" Content="v1.0.0" Margin="5" FontWeight="SemiBold"
                                                        Foreground="{DynamicResource TextPrimary}" 
-                                                       VerticalAlignment="Bottom"
-                                                       Name="VersionLabel"/>
+                                                       HorizontalAlignment="Center" Name="VersionLabel"/>
                                         </Grid>
                                 </Border>
 

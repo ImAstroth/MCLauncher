@@ -21,17 +21,17 @@
         <Setter Property="Padding" Value="5"/>
     </Style>
     
-    <Style Selector="Button.Close:pointerover /template/ ContentPresenter">
+    <Style Selector="Button.CloseBtn:pointerover /template/ ContentPresenter">
         <Setter Property="Foreground" Value="Red"/>
         <Setter Property="Background" Value="Transparent"/>
     </Style>
     
-    <Style Selector="Button.Minimize:pointerover /template/ ContentPresenter">
+    <Style Selector="Button.MinimizeBtn:pointerover /template/ ContentPresenter">
         <Setter Property="Foreground" Value="Goldenrod"/>
         <Setter Property="Background" Value="Transparent"/>
     </Style>
     
-    <Style Selector="Button.Menu:pointerover /template/ ContentPresenter">
+    <Style Selector="Button.MenuBtn:pointerover /template/ ContentPresenter">
         <Setter Property="Foreground" Value="{DynamicResource AccentColor}"/>
         <Setter Property="Background" Value="Transparent"/>
     </Style>
@@ -43,4 +43,25 @@
         <Setter Property="Height" Value="50"/>
         <Setter Property="CornerRadius" Value="8"/>
     </Style>
+    
+    <Style Selector="Button.SidebarBtn">
+        <Setter Property="Width" Value="220"/>
+        <Setter Property="Height" Value="75"/>
+        <Setter Property="Margin" Value="0,20,0,0"/>
+        <Setter Property="CornerRadius" Value="0,10,10,0"/>
+        <Setter Property="Background" Value="{DynamicResource AccentColor}"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+    </Style>
+  
+    <Style Selector="Button.SidebarBtn Image">
+        <Setter Property="Width" Value="50"/>
+        <Setter Property="Height" Value="50"/>
+    </Style>
+
+    <Style Selector="Button.SidebarBtn TextBlock">
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="25"/>
+    </Style>
+    
 </Styles>
