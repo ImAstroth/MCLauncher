@@ -6,5 +6,30 @@
              x:CompileBindings="True"
              x:Class="AstroLauncher.Views.SettingsView">
     
-    <TextBlock Text="Settings" Foreground="White"/>
+    <StackPanel Margin="12" Spacing="10">
+        <TextBlock Text="SETTINGS" FontSize="30" FontWeight="Bold" Foreground="{DynamicResource TextPrimary}" 
+                   HorizontalAlignment="Center"/>
+        
+        <TextBlock Text="Default Instance Settings" FontSize="20" FontWeight="SemiBold" Foreground="{DynamicResource TextPrimary}" 
+                   HorizontalAlignment="Left"/>
+        
+        <!-- <TextBlock Text="Max RAM (MB):" Foreground="{DynamicResource TextPrimary}" FontWeight="SemiBold"/> -->
+        <!-- <NumericUpDown Name="RamSelector" Minimum="1024" Maximum="16384" Increment="512" Value="4096" Foreground="#8C66FF" -->
+        <!--                Background="Black" FontWeight="Bold" BorderBrush="#8C66FF"/> -->
+        
+        <!-- Ram allocation -->
+        <TextBlock Text="Allocate RAM (MB):" Foreground="{DynamicResource TextPrimary}" FontWeight="SemiBold"/>
+        <Slider Minimum="0" Maximum="{Binding MaxRamValue}" 
+                Value="{Binding CurrentRamValue, Mode=TwoWay}"
+                Foreground="{DynamicResource AccentColor}" IsSnapToTickEnabled="True"
+                TickFrequency="1024" BorderBrush="{DynamicResource AccentColor}" BorderThickness="1"
+                CornerRadius="8" Padding="5"/>
+        
+        
+        
+        
+        <Button Content="SAVE" HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                Foreground="{DynamicResource TextPrimary}" Background="#8C66FF"
+                FontWeight="SemiBold" CornerRadius="8"/>
+    </StackPanel>
 </UserControl>
