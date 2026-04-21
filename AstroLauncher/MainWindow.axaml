@@ -98,7 +98,7 @@
                 
                                                 <!-- Settings button -->
                                                 <Button Grid.Row="1" Classes="BottomBtn"
-                                                        Command="{Binding OpenSettingsCommand}"
+                                                        Command="{Binding NavigateToSettingsCommand}"
                                                         CommandParameter="{Binding $parent[Window]}"
                                                         HorizontalAlignment="Left" Margin="5">
                                                         <Image Source="Assets/Images/settings-icon.png"/>
@@ -127,6 +127,11 @@
                                                         <!-- Discover -->
                                                         <DataTemplate DataType="{x:Type vm:DiscoverViewModel}">
                                                                 <views:DiscoverView/>
+                                                        </DataTemplate>
+                                                        
+                                                        <!-- Settings -->
+                                                        <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+                                                                <views:SettingsView/>
                                                         </DataTemplate>
                                                 </ContentControl.DataTemplates>
                                         </ContentControl>

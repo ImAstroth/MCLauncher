@@ -36,9 +36,8 @@ public partial class MainWindowViewModel : ObservableObject
     }
     
     [RelayCommand]
-    private void OpenSettings(Window owner)
+    private void NavigateToSettings(Window owner)
     {
-        var settingsWin = new SettingsWindow();
-        settingsWin.ShowDialog(owner);
+        CurrentPage = new SettingsViewModel();
     }
 }
