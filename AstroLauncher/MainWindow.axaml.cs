@@ -31,7 +31,11 @@ public partial class MainWindow : Window
     {
         Close();
     }
-    
+
+    private void OnResizeGripPressed(object sender, PointerPressedEventArgs e)
+    {
+        BeginResizeDrag(WindowEdge.NorthWest, e);
+    }
     
     // public async void OnLaunchButtonClicked(object sender, RoutedEventArgs e)
     // {
@@ -68,4 +72,5 @@ public partial class MainWindow : Window
     {
         BeginMoveDrag(e);
     }
+
 }

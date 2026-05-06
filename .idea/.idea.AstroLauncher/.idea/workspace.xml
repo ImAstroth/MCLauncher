@@ -15,16 +15,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2518758b-660a-4585-82c2-63a87ce1f6b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsPageViewModels/GeneralViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsPageViewModels/LauncherViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AstroLauncher/Views/SettingsPageViews/GeneralView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AstroLauncher/Views/SettingsPageViews/GeneralView.axaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AstroLauncher/Views/SettingsPageViews/LauncherView.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AstroLauncher/Views/SettingsPageViews/LauncherView.axaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AstroLauncher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AstroLauncher/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AstroLauncher/AstroLauncher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/AstroLauncher.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Views/SettingsView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Views/SettingsView.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/MainWindow.axaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/MainWindow.axaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/InstancesViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/InstancesViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/Views/InstancesView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Views/InstancesView.axaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +205,8 @@
       <workItem from="1777300000231" duration="2622000" />
       <workItem from="1777639476421" duration="3339000" />
       <workItem from="1777708830383" duration="1159000" />
-      <workItem from="1777915644002" duration="1480000" />
+      <workItem from="1777915644002" duration="1618000" />
+      <workItem from="1778084505754" duration="3406000" />
     </task>
     <task id="LOCAL-00001" summary="Created Repository">
       <option name="closed" value="true" />
@@ -387,7 +384,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777709441260</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="added GeneralViewModel.cs, LauncherViewModel.cs and other MVVM stuff for settings">
+      <option name="closed" value="true" />
+      <created>1777917208989</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1777917208990</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -418,7 +423,8 @@
     <MESSAGE value="feat: redesigned sidebar" />
     <MESSAGE value="forgot to push images from assets folder. Adding view models and views for settings too. Settings uopdate soon!" />
     <MESSAGE value="added icons for settings page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added icons for settings page" />
+    <MESSAGE value="added GeneralViewModel.cs, LauncherViewModel.cs and other MVVM stuff for settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="added GeneralViewModel.cs, LauncherViewModel.cs and other MVVM stuff for settings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

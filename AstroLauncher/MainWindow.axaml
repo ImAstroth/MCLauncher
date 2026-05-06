@@ -13,8 +13,7 @@
         WindowStartupLocation="CenterScreen"
         ExtendClientAreaTitleBarHeightHint="-1"
         ExtendClientAreaToDecorationsHint="True"
-        ExtendClientAreaChromeHints="NoChrome"
-        SystemDecorations="None"
+        WindowDecorations="None"
         
         Background="{DynamicResource SurfaceMain}"
         Width="1000" Height="700"
@@ -29,7 +28,8 @@
         </Window.Resources>
         
         <Border BorderBrush="{DynamicResource AccentColor}"
-                BorderThickness="3" CornerRadius="10" ClipToBounds="True">
+                BorderThickness="3" CornerRadius="10" ClipToBounds="True"
+                PointerPressed="OnResizeGripPressed">
                 
                 <Grid RowDefinitions="45, *">
                         <!-- TOPBAR -->        
