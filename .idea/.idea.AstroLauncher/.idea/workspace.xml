@@ -15,15 +15,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2518758b-660a-4585-82c2-63a87ce1f6b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/AstroLauncher/Styles/SettingsStyles.axaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/ViewModelBase.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AstroLauncher/Assets/Icons.axaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AstroLauncher/Styles/ListBoxStyles.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AstroLauncher/.idea/avalonia.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AstroLauncher/.idea/avalonia.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AstroLauncher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AstroLauncher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Styles/OtherStyles.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Styles/OtherStyles.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/App.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/App.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/AstroLauncher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/AstroLauncher.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/MainWindow.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/Styles/ButtonStyles.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Styles/ButtonStyles.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/Styles/SettingsStyles.axaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/DiscoverViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/DiscoverViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/HomeViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/HomeViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/InstancesViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/InstancesViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/MainWindowViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/MainWindowViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsPageViewModels/GeneralViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsPageViewModels/GeneralViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsPageViewModels/LauncherViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsPageViewModels/LauncherViewModel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Views/SettingsPageViews/GeneralView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Views/SettingsPageViews/GeneralView.axaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AstroLauncher/Views/SettingsView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Views/SettingsView.axaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +64,8 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/AstroLauncher/Styles/SettingsStyles.axaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/892a4ee261564664b543c292de8d242f226a00/bf/04ab4467/CompiledBinding.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/AstroLauncher/Assets/Icons.axaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AstroLauncher/Utils/ViewTypeToBoolConverter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AstroLauncher/ViewModels/InstancesViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AstroLauncher/ViewModels/SettingsPageViewModels/GeneralViewModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -77,7 +85,7 @@
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="SWEA" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -214,6 +222,15 @@
       <workItem from="1777915644002" duration="1618000" />
       <workItem from="1778084505754" duration="5792000" />
       <workItem from="1778155845463" duration="7389000" />
+      <workItem from="1778163511215" duration="71000" />
+      <workItem from="1778310441880" duration="460000" />
+      <workItem from="1778310957477" duration="201000" />
+      <workItem from="1778311216646" duration="226000" />
+      <workItem from="1778311479704" duration="2186000" />
+      <workItem from="1778401925413" duration="4342000" />
+      <workItem from="1778517933138" duration="3125000" />
+      <workItem from="1778521235294" duration="216000" />
+      <workItem from="1778521551522" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="Created Repository">
       <option name="closed" value="true" />
@@ -415,7 +432,15 @@
       <option name="project" value="LOCAL" />
       <updated>1778090556376</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fix: now using ListBox and DataTemplates rather than Buttons in Sidebars">
+      <option name="closed" value="true" />
+      <created>1778163573116</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1778163573116</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +474,8 @@
     <MESSAGE value="added GeneralViewModel.cs, LauncherViewModel.cs and other MVVM stuff for settings" />
     <MESSAGE value="started working on InstancesView.axaml for better minecraft installations controll" />
     <MESSAGE value="feat: added resizing" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: added resizing" />
+    <MESSAGE value="fix: now using ListBox and DataTemplates rather than Buttons in Sidebars" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: now using ListBox and DataTemplates rather than Buttons in Sidebars" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

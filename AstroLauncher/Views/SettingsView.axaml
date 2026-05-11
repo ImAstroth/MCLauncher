@@ -22,7 +22,8 @@
                <Border Grid.Column="0" Classes="InnerSurface">
                    
                    <ListBox ItemsSource="{Binding Categories}"
-                            SelectedItem="{Binding SelectedCategory}">
+                            SelectedItem="{Binding SelectedCategory}"
+                            Classes="BaseListBox">
                        
                        <ListBox.ItemTemplate>
                            <DataTemplate x:DataType="vm:ViewModelBase">
@@ -33,36 +34,6 @@
                            </DataTemplate>
                        </ListBox.ItemTemplate>
                    </ListBox>
-                   
-                   <!-- <StackPanel Orientation="Vertical" Spacing="5" Margin="5" HorizontalAlignment="Center" -->
-                   <!--             VerticalAlignment="Top"> -->
-                   <!--      -->
-                   <!--     ~1~ General @1@ -->
-                   <!--     <Button Classes="SettingsSidebarBtn BaseNavBtn" -->
-                   <!--             Command="{Binding NavigateToGeneralCommand}" -->
-                   <!--             Classes.active="{Binding CurrentSettingsPage,  -->
-                   <!--             Converter={StaticResource ViewTypeConverter}, -->
-                   <!--             ConverterParameter=GeneralViewModel}"> -->
-                   <!--          -->
-                   <!--         <StackPanel Orientation="Horizontal" Spacing="10"> -->
-                   <!--             <Image Source="/Assets/Images/house-icon.png"/> -->
-                   <!--             <TextBlock Text="General" VerticalAlignment="Center"/> -->
-                   <!--         </StackPanel> -->
-                   <!--     </Button> -->
-                   <!--      -->
-                   <!--     ~1~ Launcher @1@ -->
-                   <!--     <Button Classes="SettingsSidebarBtn BaseNavBtn"  -->
-                   <!--             Command="{Binding NavigateToLauncherCommand}" -->
-                   <!--             Classes.active="{Binding CurrentSettingsPage,  -->
-                   <!--             Converter={StaticResource ViewTypeConverter}, -->
-                   <!--             ConverterParameter=LauncherViewModel}"> -->
-                   <!--          -->
-                   <!--         <StackPanel Orientation="Horizontal" Spacing="10"> -->
-                   <!--             <Image Source="/Assets/Images/monitor-icon.png"/> -->
-                   <!--             <TextBlock Text="Launcher" VerticalAlignment="Center"/> -->
-                   <!--         </StackPanel> -->
-                   <!--     </Button> -->
-                   <!-- </StackPanel> -->
                </Border>
                
                <!-- SETTINGS MAIN AREA -->

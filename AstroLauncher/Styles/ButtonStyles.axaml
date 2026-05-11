@@ -21,16 +21,6 @@
         <Setter Property="Padding" Value="5"/>
     </Style>
     
-    <Style Selector="Button.CloseBtn:pointerover /template/ ContentPresenter">
-        <Setter Property="Foreground" Value="Red"/>
-        <Setter Property="Background" Value="Transparent"/>
-    </Style>
-    
-    <Style Selector="Button.MinimizeBtn:pointerover /template/ ContentPresenter">
-        <Setter Property="Foreground" Value="Goldenrod"/>
-        <Setter Property="Background" Value="Transparent"/>
-    </Style>
-    
     <Style Selector="Button.MenuBtn:pointerover /template/ ContentPresenter">
         <Setter Property="Foreground" Value="{DynamicResource AccentColor}"/>
         <Setter Property="Background" Value="Transparent"/>
