@@ -16,19 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2518758b-660a-4585-82c2-63a87ce1f6b7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AstroLauncher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AstroLauncher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Fonts/Minecraft.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Icons.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Assets/Icons.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Images/about-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Images/earth-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Images/house-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Images/minecraft-cube-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Images/monitor-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Images/saturn-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Images/search-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Assets/Images/settings-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/AstroLauncher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/AstroLauncher.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/MainWindow.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/MainWindow.axaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AstroLauncher/Views/InstancesView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Views/InstancesView.axaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AstroLauncher/Views/SettingsPageViews/GeneralView.axaml" beforeDir="false" afterPath="$PROJECT_DIR$/AstroLauncher/Views/SettingsPageViews/GeneralView.axaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,7 +220,8 @@
       <workItem from="1778586084619" duration="1601000" />
       <workItem from="1778675936365" duration="4146000" />
       <workItem from="1778920161920" duration="455000" />
-      <workItem from="1779280623349" duration="997000" />
+      <workItem from="1779280623349" duration="1082000" />
+      <workItem from="1779387571223" duration="591000" />
     </task>
     <task id="LOCAL-00001" summary="Created Repository">
       <option name="closed" value="true" />
@@ -466,7 +455,15 @@
       <option name="project" value="LOCAL" />
       <updated>1779280738423</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added ListBox to InstancesView.axaml and removed &quot;Fonts&quot; &amp; &quot;Images&quot; from &quot;Assets&quot; folder.">
+      <option name="closed" value="true" />
+      <created>1779281676636</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1779281676636</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,7 +473,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="Added Assets folder and backgound image" />
     <MESSAGE value="Added Assets folder and background" />
     <MESSAGE value="Minecraft can now start and added new method in &quot;MainWindow.axaml.cs&quot;" />
     <MESSAGE value="Redesing done. Added username textbox, new logo, space themed launcher now :)" />
@@ -501,7 +497,8 @@
     <MESSAGE value="fix: added Icons.axaml" />
     <MESSAGE value="fix: fixed all icons and added them to UI" />
     <MESSAGE value="feat: fully migrated to SVGs for all of the icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: fully migrated to SVGs for all of the icons" />
+    <MESSAGE value="added ListBox to InstancesView.axaml and removed &quot;Fonts&quot; &amp; &quot;Images&quot; from &quot;Assets&quot; folder." />
+    <option name="LAST_COMMIT_MESSAGE" value="added ListBox to InstancesView.axaml and removed &quot;Fonts&quot; &amp; &quot;Images&quot; from &quot;Assets&quot; folder." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

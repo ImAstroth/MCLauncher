@@ -14,11 +14,11 @@
                           VerticalScrollBarVisibility="Visible">
                 
                 <Border Classes="InnerSurface">
-                    <StackPanel Spacing="15">
+                    <StackPanel Spacing="11" Margin="5">
                         <!-- START ON STARTUP -->
                         <Grid ColumnDefinitions="Auto, *, Auto">
                             <Path Grid.Column="0" 
-                                  Data="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z M9 22V12h6v10"
+                                  Data="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-5z M9 22V12h6v10"
                                   HorizontalAlignment="Left"/>
                             
                             <StackPanel Grid.Column="1" Margin="5">
@@ -28,6 +28,42 @@
                             
                             <ToggleSwitch Grid.Column="2" Foreground="{DynamicResource AccentColor}"
                                           OnContent="" OffContent=""/>
+                        </Grid>
+                        
+                        <Line Width="200" Height="1" Fill="{DynamicResource SurfaceCard}"
+                              HorizontalAlignment="Center"/>
+                        
+                        <!-- MINIMIZE TO TRAY -->
+                        <Grid ColumnDefinitions="Auto, *, Auto">
+                            <Path Grid.Column="0" 
+                                  Data="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z M9 22V12h6v10"
+                                  HorizontalAlignment="Left"/>
+                            
+                            <StackPanel Grid.Column="1" Margin="5">
+                                <TextBlock Text="Minimize to system tray" FontSize="15"/>
+                                <TextBlock Text="Close button will minimize the launcher to tray" Classes="Description"/>
+                            </StackPanel>
+                            
+                            <ToggleSwitch Grid.Column="2" Foreground="{DynamicResource AccentColor}"
+                                          OnContent="" OffContent=""/>
+                        </Grid>
+                        
+                        <Line Width="200" Height="1" Fill="{DynamicResource SurfaceCard}"
+                              HorizontalAlignment="Center"/>
+                        
+                        <!-- LANGUAGE -->
+                        <Grid ColumnDefinitions="Auto, *, Auto">
+                            <Path Grid.Column="0" 
+                                  Data="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z M9 22V12h6v10"
+                                  HorizontalAlignment="Left"/>
+                            
+                            <StackPanel Grid.Column="1" Margin="5">
+                                <TextBlock Text="Language" FontSize="15"/>
+                                <TextBlock Text="Choose your preferred language" Classes="Description"/>
+                            </StackPanel>
+                            
+                            <ComboBox Grid.Column="2" Foreground="{DynamicResource AccentColor}"
+                                      Classes="DefaultComboBox" Width="100" VerticalAlignment="Center"/>
                         </Grid>
                     </StackPanel>
                 </Border>
