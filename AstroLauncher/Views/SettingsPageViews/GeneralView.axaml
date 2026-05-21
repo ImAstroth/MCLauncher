@@ -64,7 +64,7 @@
                             
                             <ComboBox Grid.Column="2" Foreground="{DynamicResource AccentColor}"
                                       Classes="DefaultComboBox" Width="150" VerticalAlignment="Center"
-                                      ItemsSource="{Binding Languages}"/>
+                                      ItemsSource="{Binding Languages}" SelectedItem="{Binding ChosenLanguage}"/>
                         </Grid>
                     </StackPanel>
                 </Border>
